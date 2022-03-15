@@ -6,11 +6,17 @@ public class PlayerZ : MonoBehaviour
 {
     Rigidbody rb;
 
+    bool isJump;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        isJump = false;
+
     }
 
     // Update is called once per frame
@@ -20,8 +26,8 @@ public class PlayerZ : MonoBehaviour
 
         pos = rb.position;
 
-        pos.x = Camera.main.ScreenToWorldPoint(Input.mousePosition+ 
-            Camera.main.transform.forward * 3).x;
+        pos.x = Camera.main.ScreenToWorldPoint(Input.mousePosition +
+        Camera.main.transform.forward * 3).x;
 
         rb.MovePosition(pos);
 
@@ -29,8 +35,50 @@ public class PlayerZ : MonoBehaviour
 
         vel = rb.velocity;
 
-        vel.z = 3;
+        if (isJump == true)
+        {
+            vel.y = 7;
 
-            rb.velocity = vel;
+            isJump = false;
+
+        }
+        vel.z = 3;
+        rb.velocity = vel;
+    }
+
+    public void Jump()
+    {
+     
+        isJump = true;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
