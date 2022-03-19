@@ -25,7 +25,7 @@ public class CrushCube : MonoBehaviour
         playerDistance = Vector3.Distance(player.transform.position,
         gameObject.transform.position);
 
-        if (playerDistance < 3.0f)
+        if (playerDistance < 2.0f)
         {
             pos.y -= 0.2f;
         }
