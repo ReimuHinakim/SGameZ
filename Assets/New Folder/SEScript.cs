@@ -24,7 +24,7 @@ public class SEScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if(collision.gameObject.tag == "Coin")
         {
             audioSource.PlayOneShot(SE1);
             Point += 1;
