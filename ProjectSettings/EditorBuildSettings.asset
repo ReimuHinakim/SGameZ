@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Moneyyy/Scenes/Gameover1.unity
     guid: 477585919b98eb04ba5454e7d9ef7734
+  - enabled: 1
+    path: Assets/Moneyyy/Scenes/Stage3.unity
+    guid: 734600c89e8f9de4081dfd25d4a463f9
   m_configObjects: {}
