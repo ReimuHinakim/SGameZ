@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Moneyyy/Scenes/Goal!3.unity
     guid: 16d8af6e6eaeecd40af7ced1d610712e
+  - enabled: 1
+    path: Assets/Moneyyy/Scenes/Goal!4.unity
+    guid: 28489259089deee478a308c0a533c5d0
+  - enabled: 1
+    path: Assets/Moneyyy/Scenes/Stage4.unity
+    guid: 479d06a29ed6f134a9e50a51b834d1e8
   m_configObjects: {}
